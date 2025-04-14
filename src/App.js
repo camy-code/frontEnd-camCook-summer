@@ -29,8 +29,12 @@ function App() {
           ))
         }
        
-        <Route path ="*" element={<NoPage/>}/>
+       <Route path ="*" element={<NoPage/>}/>
         </Route>
+
+    {/* This is where we would need to add dif routes */}
+        {/* <Route path ="*" element={<NoPage/>}/> */}
+
       </Routes>
     </Router>
     </div>
