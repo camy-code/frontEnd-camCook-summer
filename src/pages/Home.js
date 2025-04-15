@@ -16,7 +16,7 @@ const Home = () => {
     <>
       <Grid
         container
-        sx={{ height: "90vh" }}
+        sx={{  height: "80vh"}}
         justifyContent="center"
         alignItems="center"
       >
