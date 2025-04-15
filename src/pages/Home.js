@@ -1,9 +1,18 @@
 import { Box } from "@mui/material"
+import Grid from "@mui/material/Grid2"
+
 import ColorPick from "../tools/ColorPick"
 
 
 const Home = () => {
-    return <h1>Hello from Home </h1>
+    // Cam, follow your sketches
+    return <>
+   <Grid container sx={{height:"80vh", backgroundColor:"red"}}>
+ 
+
+   </Grid>
+    
+    </>
         
 }
 
