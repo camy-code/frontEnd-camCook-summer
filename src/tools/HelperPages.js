@@ -2,6 +2,7 @@
 import Home from "../pages/Home"
 import About from "../pages/About" // May not need this, gotta double take design
 import Shop from "../pages/Shop"
+import Login from "../pages/Login";
 
 // The following methods make adding more pages to our app the most stupid proof as possible.
 // In order to add a page to this site we can just follow the pattern below
@@ -24,6 +25,11 @@ const publicPages =   [
       compo: <Shop/>,
       path: "/shop",
       name: "shop"
+    },
+    {
+      compo: <Login/>,
+      path:"/login",
+      name:"login"
     }
   ]
 
