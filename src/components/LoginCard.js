@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import ButtonDesign from "../tools/ButtonDesign";
 
-const LoginCard = ({ onEmailChange, onPasswordChange, loginClick }) => {
+const LoginCard = ({ onEmailChange, onPasswordChange, loginClick, error }) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -17,6 +17,7 @@ const LoginCard = ({ onEmailChange, onPasswordChange, loginClick }) => {
   return (
     <Card sx={{ maxWidth: 400, margin: "0 auto", padding: 2,  }}>
       <CardContent>
+        {error && <div style={{ color: "red" }}>{error}</div>}
         <h1>Login</h1>
         <TextField
           label="Email"

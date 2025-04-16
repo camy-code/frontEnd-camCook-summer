@@ -10,10 +10,13 @@ const Login = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+      
+    const [error, setError] = useState("");
 
     // handle this later
     const loginPress = () => {
       console.log("login is pressed");
+      navigate("/dashboard");
     }
 
     // for the back button
@@ -40,9 +43,9 @@ const Login = () => {
     onEmailChange={(email) => {setEmail(email)}}
     onPasswordChange={(password) => {setPassword(password)}}
     loginClick={loginPress}
+    error={error}
 />
-    <h1>{email}</h1>
-    <h1> {password} </h1>
+ 
     </Grid>
  </Box>
  </>
