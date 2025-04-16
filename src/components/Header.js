@@ -23,7 +23,7 @@ import { Drawer } from "@mui/material";
 
 // The following is the header for the website
 
-const Header = () => {
+const Header = ({pageList}) => {
   const [open, setOpen] = useState(false);
 
   const toggleDrawer = (state) => () => {
@@ -73,7 +73,7 @@ const Header = () => {
       <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
         <Box sx={{ marginLeft: 10, marginRight: 10 }}>
           <List>
-            {HelperPages.getPublicPages().map((g) => (
+            {pageList.map((g) => (
               <ListItem
                 button
                 onClick={closeDrawer}

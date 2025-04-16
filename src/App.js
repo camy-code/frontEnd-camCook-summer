@@ -12,16 +12,21 @@ import NoPage from "./pages/NoPage"; // No page is included only here because it
 
 function App() {
   // Make a list of all the public pages
+  const allPages = HelperPages.getAllPages();
 
-    // We add this dive here so our footer has a fair amount of rooms
+  const AuthPages = HelperPages.getAuthPages();
+  const publicPages = HelperPages.getPublicPages();
+
+    // TODO: check if the user is autheticated
+
   return (
     <div style={{ minHeight: "70vh",  backgroundColor:ColorPick.getWhite()}}>
     <Router>
       <Routes>
-        <Route path="/" element={<Layout/>}>
+        <Route path="/" element={<Layout pageList={allPages}/>}>
         {
           // The following just does a bunch of mapping to make things stupid proof
-          HelperPages.getPublicPages().map((page) => (
+          allPages.map((page) => (
             <Route
               path={page.path}
               element={page.compo} 

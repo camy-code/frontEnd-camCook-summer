@@ -7,12 +7,12 @@ import { Outlet } from "react-router-dom";
 
 import { Box } from "@mui/material";
 
-const Layout = () => {
+const Layout = ({pageList}) => {
   // TODO: make a header
 
   return (
     <>
-      <Header />
+      <Header pageList={pageList}/>
 
       <Outlet />
 
