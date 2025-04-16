@@ -16,7 +16,8 @@ return <Box sx={[ButtonDesign.getButtonStyle,{
     padding:"25px",
     
     
-}]}>
+}]}
+onClick={onClick}>
     <ArrowBackIcon sx={{transform:"scale(1.5)"}}/>
 </Box>
 

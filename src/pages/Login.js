@@ -24,13 +24,15 @@ const Login = () => {
 
  return <>
  <Box>
+   <Box sx={{padding:"25px"}}>
     <BackButton onClick={handleBack}/>
+    </Box>
     <Grid 
     container 
     alignContent={"center"} 
     justifyContent={"center"}
     direction={"column"}
-    sx={{height:"80vh"}}
+    sx={{height:"80vh", marginTop:-10}}
     >
 
 
