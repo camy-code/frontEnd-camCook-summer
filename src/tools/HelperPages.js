@@ -4,7 +4,7 @@ import About from "../pages/About" // May not need this, gotta double take desig
 import Login from "../pages/Login";
 
 // Admin pages that require login
-import Dashboard from "../pages/Dashboard";
+import Dashboard from "../pages/authPages/Dashboard"; // This is the dashboard page
 
 // The following methods make adding more pages to our app the most stupid proof as possible.
 // In order to add a page to this site we can just follow the pattern below

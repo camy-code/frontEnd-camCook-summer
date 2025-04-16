@@ -8,11 +8,11 @@ const AdminLayout = () => {
   return (
     <>
       <Grid  container direction={"row"}>
-        <Box sx={{width:"20%"}}>
+        <Box sx={{width:"15%", backgroundColor:"red"}}>
           <AdminSidebar />
         </Box>
 
-        <Box sx={{ width: "80%"}}>
+        <Box sx={{ width: "85%"}}>
           <Outlet />
         </Box>
       </Grid>
