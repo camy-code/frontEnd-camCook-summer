@@ -13,12 +13,13 @@ const Login = () => {
     }
 
  return <>
- <Box >
+ <Box>
     <Grid 
     container 
     alignContent={"center"} 
     justifyContent={"center"}
     direction={"column"}
+    sx={{height:"80vh"}}
     >
 
 

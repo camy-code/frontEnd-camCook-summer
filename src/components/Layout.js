@@ -16,8 +16,8 @@ const Layout = () => {
 
       <Outlet />
 
-    
-        <Footer />
+      {/* Add later     */}
+        {/* <Footer /> */}
       
     </>
   );

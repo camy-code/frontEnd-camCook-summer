@@ -2,8 +2,11 @@ import { Box, Button } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 
 import ColorPick from "../tools/ColorPick";
+import ButtonDesign from "../tools/ButtonDesign";
+
 import { Navigate, useNavigate } from "react-router-dom";
 import { use } from "react";
+import { color } from "@mui/system";
 const Home = () => {
   // Cam, follow your sketches
     // and add the login button here (make button code into a function?)
@@ -21,17 +24,8 @@ const Home = () => {
         alignItems="center"
       >
         <Box sx={{transform:"scale(1.5)",}}>
-          <Button sx={{ backgroundColor: "red",
-            color:"black",
-            textTransform: "none",
-            fontSize: "1.5rem",
-            padding: "16px 32px",
-            borderRadius: "25px",
-            "&:hover": {
-              backgroundColor: "blue",
-            },
-            
-           }}
+          <Button sx={[ButtonDesign.getButtonStyle(),{}]}
+          // This is how we would add to our custom function
            onClick={() => {
             handleLogin();}}
            >Login</Button>

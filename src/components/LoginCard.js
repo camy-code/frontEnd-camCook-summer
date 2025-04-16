@@ -2,6 +2,7 @@ import { Button, Card, CardActions, CardContent, TextField } from "@mui/material
 import { useState } from "react";
 
 import { useEffect } from "react";
+import ButtonDesign from "../tools/ButtonDesign";
 
 const LoginCard = ({ onEmailChange, onPasswordChange, loginClick }) => {
     const [email, setEmail] = useState("");
@@ -14,7 +15,7 @@ const LoginCard = ({ onEmailChange, onPasswordChange, loginClick }) => {
   , [email, password ]);
 
   return (
-    <Card sx={{ maxWidth: 400, margin: "0 auto", padding: 2 }}>
+    <Card sx={{ maxWidth: 400, margin: "0 auto", padding: 2,  }}>
       <CardContent>
         <h1>Login</h1>
         <TextField
@@ -34,7 +35,7 @@ const LoginCard = ({ onEmailChange, onPasswordChange, loginClick }) => {
         />
       </CardContent>
       <CardActions>
-        <Button variant="contained" fullWidth onClick={loginClick}>
+        <Button variant="contained" fullWidth onClick={loginClick} sx={ButtonDesign.getButtonStyle} >
           Login
         </Button>
       </CardActions>

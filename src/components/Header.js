@@ -43,7 +43,7 @@ const Header = () => {
         <AppBar
           position="fixed"
           sx={{
-            bgcolor: ColorPick.getColor()[0],
+            bgcolor: "white",
             paddingBottom: 1,
             paddingTop: 1,
           }}
@@ -52,11 +52,7 @@ const Header = () => {
           <Toolbar>
             {/* Left Side: Logo and Name */}
             <Box display="flex" alignItems="center" flexGrow={1}>
-              <Typography variant="h6" component="div" sx={{ marginLeft: 1 }}>
-                MyWebsite
-              </Typography>
-              {/* Add an icon here */}
-              <DeleteOutlinedIcon sx={{ marginLeft: 1 }} />
+              {/* This is where we add left side things if we wanted to */}
             </Box>
 
             {/* Right Side: Navigation Buttons */}
@@ -84,6 +80,7 @@ const Header = () => {
                 key={g.name}
                 component={Link}
                 to={g.path}
+                sx={{textTransform: "none", color:"black"}}
               >
                 <ListItemText primary={g.name.toUpperCase()} />
               </ListItem>
