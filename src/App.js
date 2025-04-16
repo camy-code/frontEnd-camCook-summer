@@ -1,6 +1,8 @@
 import "./App.css";
 import Layout from "./components/Layout";
 
+import AdminLayout from "./components/adminComponents/AdminLayout";
+
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Box } from "@mui/material";
@@ -26,14 +28,22 @@ function App() {
         <Route path="/" element={<Layout pageList={allPages}/>}>
         {
           // The following just does a bunch of mapping to make things stupid proof
-          allPages.map((page) => (
+          publicPages.map((page) => (
             <Route
               path={page.path}
               element={page.compo} 
             />
           ))
         }
-       
+       <Route path="/" element={<AdminLayout/>}>
+          {/* Fill out this later */}
+          {AuthPages.map((page) => (
+            <Route
+              path={page.path}
+              element={page.compo} 
+            />
+          ))}
+       </Route>
        <Route path ="*" element={<NoPage/>}/>
         </Route>
 
