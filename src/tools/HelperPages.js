@@ -1,7 +1,7 @@
 // The following are 3 methods that will return 
 import Home from "../pages/Home"
 import About from "../pages/About" // May not need this, gotta double take design
-import Shop from "../pages/Shop"
+
 import Login from "../pages/Login";
 
 // The following methods make adding more pages to our app the most stupid proof as possible.
@@ -21,11 +21,7 @@ const publicPages =   [
       path: "about",
       name: "about"
     },
-    {
-      compo: <Shop/>,
-      path: "/shop",
-      name: "shop"
-    },
+  
     {
       compo: <Login/>,
       path:"/login",
