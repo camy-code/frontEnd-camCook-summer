@@ -1,5 +1,14 @@
+import Grid from "@mui/material/Grid2";
+import { Box, Button } from "@mui/material";
+
+import ButtonDesign from "../../tools/ButtonDesign";
 const AdminSidebar = () => {
-    return <h1>This is the sidebar</h1>
+    return <>
+
+    <Grid container direction={"column"}>
+        <Button sx={ButtonDesign.getButtonStyle()}>Hello</Button>
+    </Grid>
+    </>
 } 
 
 export default AdminSidebar;
