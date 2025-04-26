@@ -25,7 +25,7 @@ function App() {
     <div style={{ minHeight: "70vh",  backgroundColor:ColorPick.getWhite()}}>
     <Router>
       <Routes>
-        <Route path="/" element={<Layout pageList={allPages}/>}>
+        <Route path="/" element={<Layout pageList={publicPages}/>}>
         {
           // The following just does a bunch of mapping to make things stupid proof
           publicPages.map((page) => (
@@ -35,6 +35,9 @@ function App() {
             />
           ))
         }
+          </Route>
+
+          <Route path="/" element={<Layout pageList={AuthPages.concat(publicPages[0])}/>}>
        <Route path="/" element={<AdminLayout/>}>
           {/* Fill out this later */}
           {AuthPages.map((page) => (
@@ -44,9 +47,12 @@ function App() {
             />
           ))}
        </Route>
-       <Route path ="*" element={<NoPage/>}/>
-        </Route>
+       
+       </Route>
 
+
+       <Route path ="*" element={<NoPage/>}/>
+    
     {/* This is where we would need to add dif routes */}
         {/* <Route path ="*" element={<NoPage/>}/> */}
 
