@@ -15,7 +15,7 @@ Happy coding! And make sure to drink water. Anyone is welcome to use this if it 
 
 
 # Notes
-Unfortunately, I got bored with this project as I lost excitement for design and have an idea for something else. Here is a [link](https://youtu.be/xvFZjo5PgG0?si=oU4JhcrlgkvjLWmQ) to the functionality. It is just setiing up generic pages. With a sidebar. Hopefully I  remember making this in the case that I want to put together a front end quickly.
+Unfortunately, I got bored with this project as I lost excitement for design and have an idea for something else. Here is a [link](https://youtu.be/FMyFjLnqlMM) to the functionality. It is just setiing up generic pages. With a sidebar. Hopefully I  remember making this in the case that I want to put together a front end quickly.
 
 # Getting Started with Create React App
 
