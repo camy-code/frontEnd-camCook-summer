@@ -6,26 +6,12 @@ import HomeIcon from '@mui/icons-material/Home';
 import ButtonDesign from "../../tools/ButtonDesign";
 
 import { useNavigate } from "react-router-dom";
+import HelperPages from "../../tools/HelperPages";
 const AdminSidebar = () => {
   // We need to get a button DS
   const iconStyle = {};
-  const mButtons = [
-    {
-      name: "RED",
-      path: "/",
-      icon:<HomeIcon sx={iconStyle}/>
-    },
-    {
-      name: "cam",
-      path: "/",
-      icon:<HomeIcon sx={iconStyle}/>
-    },
-    {
-      name: "camden",
-      path: "/",
-      icon:<HomeIcon sx={iconStyle}/>
-    },
-  ];
+  const mButtons = HelperPages.getAuthPages(); // TODO
+  
   const navigte = useNavigate();
 
   return (
@@ -46,7 +32,7 @@ const AdminSidebar = () => {
                 navigte(button.path);
               }}
             >
-             {button.icon} {button.name} 
+             {button.name} 
             </Button>
           );
         })}
@@ -56,3 +42,5 @@ const AdminSidebar = () => {
 };
 
 export default AdminSidebar;
+
+// Some bug here. Gotta just make sure button is good

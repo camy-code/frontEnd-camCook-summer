@@ -11,6 +11,7 @@ import Test from "../pages/authPages/Test";
 import Share from "../pages/authPages/Share";
 import Upload from "../pages/authPages/Upload";
 
+
 // The following methods make adding more pages to our app the most stupid proof as possible.
 // In order to add a page to this site we can just follow the pattern below
 import { useNavigate } from 'react-router-dom';
